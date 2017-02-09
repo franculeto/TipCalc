@@ -9,12 +9,12 @@ import android.view.MenuItem;
 import android.widget.EditText;
 
 import butterknife.ButterKnife;
-import butterknife.BindView;
+import butterknife.Bind;
 
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.inputBill)
+    @Bind(R.id.inputBill)
     EditText inputBill;
 
     @Override
