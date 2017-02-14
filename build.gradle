@@ -30,4 +30,6 @@ ext {
 
     supportLibraryVersion = '23.1.1'
     butterKnifeVersion = '8.5.1'
+    butterKnifeCompiler = '8.5.1'
+
 }
