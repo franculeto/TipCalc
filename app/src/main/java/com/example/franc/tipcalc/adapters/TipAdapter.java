@@ -52,7 +52,9 @@ public class TipAdapter extends RecyclerView.Adapter<TipAdapter.ViewHolder>
         TipRecord element = dataset.get(position);
         String strTip = String.format(context.getString(R.string.global_message_tip),
                 element.getTip());
+        String strTimeStamp = element.getDateFormatedd();
         holder.txtContent.setText(strTip);
+        holder.txtItemTimeStamp.setText(strTimeStamp);
         holder.setOnItemClickListener(element, onItemClickListener);
     }
 
@@ -75,6 +77,8 @@ public class TipAdapter extends RecyclerView.Adapter<TipAdapter.ViewHolder>
     public static class ViewHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.txtContent)
         TextView txtContent;
+        @BindView(R.id.txtItemTimeStamp)
+        TextView txtItemTimeStamp;
 
         public ViewHolder(View itemView) {
             super(itemView);
